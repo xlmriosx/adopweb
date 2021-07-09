@@ -1,0 +1,14 @@
+<tbody>
+    <tr> 
+        <td>{{ mascota.nombre }} </td>
+        <td>{{ mascota.fechaNac }} </td>
+        <td>{{ mascota.fechaPub }} </td>
+    </tr>
+</tbody>
+
+#contexto
+
+def mascotas_list(request):
+    mascota = Mascota.objects.all()
+    contexto = {'mascotas': mascota}
+    return render(request, 'mascotas_list.html', contexto)

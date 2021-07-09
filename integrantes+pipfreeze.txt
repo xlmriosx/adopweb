@@ -1,0 +1,24 @@
+Grupo14 -Integrantes:
+-Barrientos, José Agustín
+-Bruzzo, Fernando Matías
+-Cabrera, Luis Miguel Ángel
+-Fiamini, Martín
+-Ríos, Lucas Martín(yo)
+-Rojo, Humberto Luis
+
+pip freeze env:
+asgiref==3.2.10
+css==0.1
+Django==3.1
+fanstatic==1.1
+js==1.0
+mysql==0.0.2
+mysqlclient==2.0.3
+Pillow==8.1.0
+psycopg2==2.8.6
+pytz==2021.1
+shutilwhich==1.1.0
+sqlparse==0.4.1
+WebOb==1.8.7
+
+

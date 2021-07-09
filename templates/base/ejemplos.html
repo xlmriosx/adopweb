@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Titulo de la pestaña-->
+        <title>Adopciones Web</title>
+
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">    
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVyUew+OrCXaRkfj"
+                crossorigin="anonymous">
+        
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous">
+            
+        </script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfplYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous">
+            
+        </script>
+        
+  </head>
+  
+   
+    <body>
+        <h1>Hello, world!</h1>
+        
+        <!-- Botones -->
+        <button class="btn btn-secondary" type="button">
+            <span class="icon icon-thumbs-up"></span>
+            Like
+          </button>
+          <button class="btn btn-primary" type="button">
+            <span class="icon icon-thumbs-up"></span>
+            Liked!
+          </button>
+          
+        <!-- Direccionamiento por botones -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span class="icon icon-chat"></span>
+                Discussions
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="icon icon-bell"></span>
+                Notifications
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="icon icon-users"></span>
+                Members
+              </a>
+            </li>
+        </ul>
+
+        <!--Botonoes grandes-->
+        <button type="button" class="btn btn-lg btn-pill btn-primary">Primary</button>
+        <button type="button" class="btn btn-lg btn-pill btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-lg btn-pill btn-success">Success</button>
+        <button type="button" class="btn btn-lg btn-pill btn-info">Info</button>
+        <button type="button" class="btn btn-lg btn-pill btn-warning">Warning</button>
+        <button type="button" class="btn btn-lg btn-pill btn-danger">Danger</button>
+        <button type="button" class="btn btn-lg btn-pill btn-link">Link</button>
+        
+        <!--Botonoes medianos-->
+        <button type="button" class="btn btn-sm btn-pill btn-primary">Primary</button>
+        <button type="button" class="btn btn-sm btn-pill btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-sm btn-pill btn-success">Success</button>
+        <button type="button" class="btn btn-sm btn-pill btn-info">Info</button>
+        <button type="button" class="btn btn-sm btn-pill btn-warning">Warning</button>
+        <button type="button" class="btn btn-sm btn-pill btn-danger">Danger</button>
+        <button type="button" class="btn btn-sm btn-pill btn-link">Link</button>
+
+        <!--Botonoes chicos-->
+        <button type="button" class="btn btn-xs btn-pill btn-primary">Primary</button>
+        <button type="button" class="btn btn-xs btn-pill btn-secondary">Default</button>
+        <button type="button" class="btn btn-xs btn-pill btn-success">Success</button>
+        <button type="button" class="btn btn-xs btn-pill btn-info">Info</button>
+        <button type="button" class="btn btn-xs btn-pill btn-warning">Warning</button>
+        <button type="button" class="btn btn-xs btn-pill btn-danger">Danger</button>
+        <button type="button" class="btn btn-xs btn-pill btn-link">Link</button>
+        
+        <!--Tabla de busqueda-->
+        <div class="flextable">
+            <div class="flextable-item flextable-primary">
+              <input type="text" class="form-control" placeholder="Search orders">
+            </div>
+            <div class="flextable-item">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">
+                  <span class="icon icon-pencil"></span>
+                </button>
+                <button type="button" class="btn btn-outline-primary">
+                  <span class="icon icon-erase"></span>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <!--stats-->
+        <div class="statcard p-3">
+            <h3 class="statcard-number">12,938</h3>
+            <span class="statcard-desc">Page views</span>
+          </div>
+          <div class="statcard p-3 text-xs-center">
+            <h3 class="statcard-number">758</h3>
+            <span class="statcard-desc">Downloads</span>
+          </div>
+          <div class="statcard p-3 text-xs-right">
+            <h3 class="statcard-number">1,293</h3>
+            <span class="statcard-desc">Sign-ups</span>
+        </div>
+
+        <!--suba y bajas-->
+        <div class="statcard p-3">
+            <h3 class="statcard-number">
+              12,938
+              <small class="delta-indicator delta-positive">5%</small>
+            </h3>
+            <span class="statcard-desc">Page views</span>
+          </div>
+          <div class="statcard p-3">
+            <h3 class="statcard-number">
+              758
+              <small class="delta-indicator delta-negative">1.3%</small>
+            </h3>
+            <span class="statcard-desc">Downloads</span>
+        </div>
+
+         <!--suba y bajas colores cascada-->
+        <div class="statcard statcard-primary p-4 mb-2">
+            <h3 class="statcard-number">
+              12,938
+              <small class="delta-indicator delta-positive">5%</small>
+            </h3>
+            <span class="statcard-desc">Page views</span>
+          </div>
+          <div class="statcard statcard-success p-4 mb-2">
+            <h3 class="statcard-number">
+              758
+              <small class="delta-indicator delta-negative">1.3%</small>
+            </h3>
+            <span class="statcard-desc">Downloads</span>
+          </div>
+          <div class="statcard statcard-info p-4 mb-2">
+            <h3 class="statcard-number">
+              758
+              <small class="delta-indicator delta-negative">1.3%</small>
+            </h3>
+            <span class="statcard-desc">Downloads</span>
+          </div>
+          <div class="statcard statcard-danger p-4 mb-2">
+            <h3 class="statcard-number">
+              1,293
+              <small class="delta-indicator delta-positive">6.75%</small>
+            </h3>
+            <span class="statcard-desc">Sign-ups</span>
+          </div>
+          <div class="statcard statcard-warning p-4 mb-2">
+            <h3 class="statcard-number">
+              1,293
+              <small class="delta-indicator delta-positive">6.75%</small>
+            </h3>
+            <span class="statcard-desc">Sign-ups</span>
+        </div>
+
+        <!--division valores colores -->
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="statcard statcard-primary p-4">
+                <h3 class="statcard-number">
+                  12,938
+                  <small class="delta-indicator delta-positive">5%</small>
+                </h3>
+                <span class="statcard-desc">Page views</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="statcard statcard-success p-4">
+                <h3 class="statcard-number">
+                  758
+                  <small class="delta-indicator delta-negative">1.3%</small>
+                </h3>
+                <span class="statcard-desc">Downloads</span>
+              </div>
+            </div>
+        </div>
+
+        <!--divisor-->
+        <div class="hr-divider">
+            <h3 class="hr-divider-content hr-divider-heading">
+              Divider heading
+            </h3>
+        </div>
+
+        <!-- header navegacion-->
+        <div class="hr-divider">
+            <ul class="nav nav-pills hr-divider-content hr-divider-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active tab</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tab</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tab</a>
+              </li>
+            </ul>
+        </div>
+
+         <!-- busqueda -->
+        <div class="input-with-icon">
+            <input type="text" value="Example input" class="form-control">
+            <span class="icon icon-calendar"></span>
+        </div>
+
+        <!-- navgacion tabla horizontal-->
+        <ul class="nav nav-bordered">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Bold</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minimal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+        </ul>
+
+        <!--navegacion vertical-->
+        <ul class="nav nav-bordered nav-stacked flex-md-column">
+            <li class="nav-header">Examples</li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Bold</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minimal</a>
+            </li>
+          
+            <li class="nav-header">Sections</li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+
+        <!--navegacion con iconos-->
+        <nav class="iconav">
+            <a class="iconav-brand" href="#">
+              <span class="icon icon-leaf iconav-brand-icon"></span>
+            </a>
+            <div class="iconav-slider">
+              <ul class="nav nav-pills iconav-nav flex-md-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Overview" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-home"></span>
+                    <small class="iconav-nav-label d-md-none">Overview</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Order history" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-text-document"></span>
+                    <small class="iconav-nav-label d-md-none">History</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Fluid layout" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-globe"></span>
+                    <small class="iconav-nav-label d-md-none">Fluid layout</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Icon-nav layout" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-area-graph"></span>
+                    <small class="iconav-nav-label d-md-none">Icon nav</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" title="Docs" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-list"></span>
+                    <small class="iconav-nav-label d-md-none">Docs</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Light UI" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <span class="icon icon-flash"></span>
+                    <small class="iconav-nav-label d-md-none">Light UI</small>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Signed in as mdo" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <img src="../assets/img/avatar-mdo.png" alt="" class="rounded-circle img-fluid">
+                    <small class="iconav-nav-label d-md-none">@mdo</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        
+
+
+        
+    
+        <!-- Include jQuery (required) and the JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="dist/toolkit.min.js"> holis</script>
+    </body>
+  
+</html>

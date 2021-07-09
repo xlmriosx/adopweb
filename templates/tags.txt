@@ -1,0 +1,9 @@
+<tbody>
+    {% for mascota in mascotas %}
+    <tr>
+        <td>{{ mascota.nombre }}</td>
+        <td>{{ mascota.fechaNac }}</td>
+        <td>{{ mascota.fechaPub }}</td>
+    </tr>
+    {% endfor %}
+</tbody>

@@ -1,0 +1,13 @@
+<tbody>
+    {% if mascotas %}
+    {% for mascota in mascotas %}
+    <tr>
+        <td>{{ mascota.nombre }}</td>
+        <td>{{ mascota.fechaNac }}</td>
+        <td>{{ mascota.fechaPub }}</td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <h4> No ex reg de masc </h4>
+    {% endif %}
+</tbody>
